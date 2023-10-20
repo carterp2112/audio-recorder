@@ -20,7 +20,6 @@ function init(){
     }
 
     function stopAudio() {
-        alert("Recording Stopped.");
         mediaRecorder.stop();
 
         const blob = new Blob(chunks, { type: "audio/ogg; codecs=opus" });
