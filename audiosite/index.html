@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='project1.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAXFxcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREQAAAAAAAREREAAAAAARERERAAAAABEREREAAAAAEREREQAAAAARERERAAAAAAERERAAAAAAABERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA/D8AAPgfAADwDwAA8A8AAPAPAADwDwAA+B8AAPw/AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a>Audio Recorder</a></h1>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="megatron-top">
+            <section class="megatron-text">
+                <h2>How to use the Audio Recorder</h2>
+                <p>Begin by clicking the record button below, and then speak into the microphone. Your audio will playback shortly.</p>
+            </section>
+            <section class="megatron-subscribe">
+                <form>
+                    <label for="email">Subscribe:</label>
+                    <input type="text" name="email" placeholder="example@email.com">
+                    <input type="submit" name="submit">
+                </form>
+                <p>Subscribe for sitewide updates regarding new functionalities.</p>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="site-header">
+            <h1>Press the red button!</h1>
+            <p>Make sure to speak clearly!</p>
+        </div>
+        <div class="recorder">
+            <button id="record-button">🔴</button>
+            <button id="stop-button" onclick="stopRecording()">⬛</button>
+            <button id="play-button" onclick="playAudio()">▶️</button>
+            <audio></audio>
+        </div>
+        <p class="button-instruction">Press 🔴 to record, ⬛ to stop, and ▶️ to play.</p>
+    </main>
+    <footer>
+        <p>Made by Carter P. 2023, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
